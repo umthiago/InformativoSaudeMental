@@ -552,6 +552,7 @@ button {
 }
 
 .photog h1 {
+     margin-left: 15%;
      padding: 0;
      font-size: 89px;
      line-height: 90px;
@@ -563,7 +564,7 @@ button {
 
 
 .photog .read_more {
-    margin-right: 15px;
+    margin-left: 15%;
     font-weight: normal;
     background:#F5F7F8;
     color: #000;
@@ -1257,4 +1258,10 @@ padding-bottom: 40px;}
 .inner_page .contact {
     padding-top: 145px;
     padding-bottom: 80px;
+}
+
+@media (max-width: 600px) {
+    #carac{
+        font-size: 16px;
+    }
 }

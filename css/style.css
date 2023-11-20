@@ -272,11 +272,25 @@ button {
      display: inline-block;
 }
 
+
 .d_flex {
-     display: flex;
-     align-items: center;
-     flex-wrap: wrap;
-}
+    display: flex;
+    justify-content: space-between; /* Alinha os itens horizontalmente com espaço entre eles */
+    flex-wrap: wrap; /* Faz com que os itens se ajustem a várias linhas */
+ }
+
+ .col-md-4 {
+    flex: 10 0 30%; /* Define a largura máxima dos itens para ocupar 30% do contêiner pai */
+    margin-bottom: 20px; /* Adiciona um espaçamento entre os blocos */
+ }
+
+ .col-md-4 .latest {
+    height: 80%; /* Garante que todos os blocos tenham a mesma altura */
+ }
+ .centered-row {
+    display: flex;
+    justify-content: center;
+ }
 
 .read_more {
      font-size: 17px;
@@ -855,6 +869,7 @@ button {
     bottom: 0;
 }
 
+
 .nostrud h3 {
     color: #151515;
     font-size: 30px;
@@ -877,6 +892,33 @@ button {
     left: 0;
     right: 0;
     background: url(../images/fitaamarela.jpg);
+    bottom: -40px;
+    width: 80px;
+    height: 81px;
+    text-align: center;
+    margin: 0 auto;
+}
+.nostrud2 h3 {
+    color: #151515;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    padding-top: 52px;
+}
+
+.nostrud2 p {
+    padding: 5px 0 60px 0;
+    color: #0f100d;
+    line-height: 28px;
+    font-weight: normal;
+}
+
+.nostrud2 {position:relative;}
+.nostrud2::before {
+    position: relative;
+    content: "";
+    left: 0;
+    right: 0;
     bottom: -40px;
     width: 80px;
     height: 81px;

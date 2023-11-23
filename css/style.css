@@ -281,11 +281,10 @@ button {
 
  .col-md-4 {
     flex: 10 0 30%; /* Define a largura máxima dos itens para ocupar 30% do contêiner pai */
-    margin-bottom: 20px; /* Adiciona um espaçamento entre os blocos */
  }
 
  .col-md-4 .latest {
-    height: 80%; /* Garante que todos os blocos tenham a mesma altura */
+    height: 90%; /* Garante que todos os blocos tenham a mesma altura */
  }
  .centered-row {
     display: flex;
@@ -830,7 +829,10 @@ button {
 
 /** end protect **/
 
-
+#sla{
+    display: flex;
+    justify-content: center; 
+}
 
 /** cases section **/
 
@@ -838,8 +840,6 @@ button {
     background: #fff;
     padding: 0 30px 0 30px;
    padding-top: 70px;
-
-
 }
 .cases .titlepage {padding-bottom: 30px;}
 .cases .titlepage p {padding-top: 5px;}
@@ -885,7 +885,8 @@ button {
     font-weight: normal;
 }
 
-.nostrud {position:relative;}
+.nostrud {position:relative;
+}
 .nostrud::before {
     position: absolute;
     content: "";
@@ -1295,10 +1296,10 @@ ul.top_infomation li i:hover {
     padding-top: 130px;
     padding-bottom: 80px;
 }
-.inner_page .cases {padding-top: 140px;
+.inner_page .cases {padding-top: 20px;
 padding-bottom: 40px;}
 .inner_page .contact {
-    padding-top: 145px;
+    padding-top: 20px;
     padding-bottom: 80px;
 }
 

@@ -286,6 +286,9 @@ button {
  .col-md-4 .latest {
     height: 90%; /* Garante que todos os blocos tenham a mesma altura */
  }
+ .col-md-6 .latest {
+    height: 90%; /* Garante que todos os blocos tenham a mesma altura */
+ }
  .centered-row {
     display: flex;
     justify-content: center;

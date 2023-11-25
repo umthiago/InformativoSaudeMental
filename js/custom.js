@@ -177,3 +177,33 @@ function navLinkClick() {
     navToggler.click();
   }
 }
+
+function mostrarElemento(elemento) {
+  elemento.style.opacity = '1';
+  elemento.style.transform = 'translateY(0)';
+}
+
+const elementos = document.querySelectorAll('.caixa-texto');
+
+const opcoes = {
+  root: null,
+  rootMargin: '0px',
+  threshold: 0.5 // Altere esse valor conforme necessário
+};
+
+const observer = new IntersectionObserver(function(entries, observer) {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      mostrarElemento(entry.target);
+      observer.unobserve(entry.target); // Para observar apenas uma vez
+    }
+  });
+}, opcoes);
+
+elementos.forEach(elemento => {
+  observer.observe(elemento);
+});
+
+
+
+

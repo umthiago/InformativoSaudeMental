@@ -191,6 +191,16 @@ img {
      padding: 0;
 }
 
+.caixa-texto {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .caixa-texto.mostrar {
+    opacity: 1;
+  }
+  
+
 .form-control:focus {
      border-color: #ffffff !important;
      box-shadow: 0 0 0 .2rem rgba(255, 255, 255, .25);
